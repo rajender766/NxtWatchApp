@@ -1,6 +1,20 @@
 /* eslint-disable import/prefer-default-export */
 import Styled from 'styled-components'
 
+export const ImageContainer = Styled.p`
+    display: flex;
+    align-items:center;
+    background-color:transparent;
+    margin:0px;
+   
+`
+
+export const Content = Styled.h1`
+    font-size:15px;
+    font-family:"Roboto";
+    margin:7px;
+    color: ${props => (props.textColor ? '#f8fafc' : '#475569')};
+`
 export const PageContainer = Styled.li`
     display: flex;
     align-items:center;
