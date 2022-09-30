@@ -1,0 +1,45 @@
+.light-mode{
+color: #212121;
+height: 22px;
+width: 22px;
+}
+
+.dark-mode{
+color:  #94a3b8;
+height: 22px;
+width: 22px;
+}
+
+.social-icons{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.dark-mode-content{
+    color:  #f4f4f4;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 700;
+    margin-left: 7px;
+}
+
+.light-mode-content{
+    color:   #212121;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 700;
+    margin-left: 7px;
+}
+
+.save{
+    font-size: 13px;
+}
+
+.paragraph{
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 600;
+    margin-left: 7px;
+}
+

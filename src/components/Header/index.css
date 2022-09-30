@@ -1,0 +1,52 @@
+.lightModeBtn {
+  height: 20px;
+  width: 70px;
+  background-color: '#ffffff';
+  border: 1px solid #3b82f6;
+  border-radius: 3px;
+  padding-bottom: 6px;
+  margin-left: 10px;
+  text-align: center;
+  color: #3b82f6;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.darkModeBtn {
+  height: 20px;
+  width: 70px;
+  background-color: '#181818';
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding-bottom: 6px;
+  margin-left: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.listItem{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:transparent;
+}
+
+.unList{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self:flex-start;
+    padding: 10px;
+    margin:0px;
+    background-color:transparent;
+    list-style-type: none;
+}
+
