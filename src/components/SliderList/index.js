@@ -15,12 +15,7 @@ const SliderLists = props => {
         const {isDarkMode} = value
         return (
           <div>
-            <Link to={`${path}`}>
-              <PageContainer onClick={onChangeTab} tabColor={isActive}>
-                <ImageContainer textColor={isDarkMode}>{icon}</ImageContainer>
-                <Content textColor={isDarkMode}>{displayText}</Content>
-              </PageContainer>
-            </Link>
+           
           </div>
         )
       }}
