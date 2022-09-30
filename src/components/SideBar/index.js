@@ -1,6 +1,4 @@
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/extensions */
-/* eslint-disable react/no-unknown-property */
+import {Link} from 'react-router-dom'
 import {v4} from 'uuid'
 
 import {AiFillHome} from 'react-icons/ai'
@@ -8,13 +6,15 @@ import {FaFire} from 'react-icons/fa'
 import {SiYoutubegaming} from 'react-icons/si'
 import {CgPlayListAdd} from 'react-icons/cg'
 import ModeContext from '../../Context/ModeContext'
-import SliderList from '../SliderList'
+
 
 import {
   SliderContainer,
   SliderLinksContainer,
   PageContainer,
   LogosContainer,
+  Content,
+  ImageContainer,
 } from './StyledComponents'
 
 import './index.css'
@@ -51,22 +51,17 @@ const Slider = () => (
     {value => {
       const {isDarkMode} = value
       const iconName = isDarkMode ? 'dark-mode-content' : 'light-mode-content'
-      let tabId = ''
-      const tabSelected = SelectedId => {
-        const tab = navItemsList.filter(eachItem => eachItem.id === SelectedId)
-        const {id} = tab
-        tabId = id
-      }
+     
       return (
         <SliderContainer bgColor={isDarkMode}>
           <SliderLinksContainer>
             {navItemsList.map(eachItem => (
-              <SliderList
-                key={eachItem.id}
-                tabDetails={eachItem}
-                tabSelected={tabSelected}
-                isActive={eachItem.id === tabId}
-              />
+              <Link to={`${eachItem.path}`}>
+                <PageContainer>
+                  <ImageContainer textColor={isDarkMode}>{eachItem.icon}</ImageContainer>
+                  <Content textColor={isDarkMode}>{eachItem.displayText}</Content>
+                </PageContainer>
+             </Link>
             ))}
           </SliderLinksContainer>
           <LogosContainer>
